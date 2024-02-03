@@ -1,0 +1,232 @@
+[class*="container"]{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header{
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+  box-shadow: var(--shadow);
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__mode{
+    cursor: pointer;
+  }
+  &__logo{
+    font-size: 18px;
+    color:var(--color-text);
+    background:var(--color-bg);
+  }
+
+}
+
+.main{
+  &__content{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    column-gap: 20px;
+    row-gap: 35px;
+    @media (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+
+
+
+.cart{
+  box-shadow: 0px 0px 18px 8px rgba(34, 60, 80, 0.2);
+  width: 250px;
+  background: whitesmoke;
+  font-size: 30px;
+  border-radius:5px;
+  background:  var(--color-bg);
+  overflow: hidden;
+
+  &__infoBlock {
+    padding: 20px;
+    font-size: 16px;
+
+    &:last-child(:not) {
+      margin-bottom: 10px;
+    }
+  }
+  &__image{
+    height: 145px;
+    width: 100%;
+    position: relative;
+   img{
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+   }
+  }
+
+
+  &__title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__population{}
+  &__region{}
+  &__capital{}
+
+}
+.searchInput{
+  box-shadow: 0px 0px 18px 8px rgba(34, 60, 80, 0.2);
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 20px;
+  border-radius:5px;
+
+  input{
+    padding: 7px 40px 7px 15px;
+    font-size: 16px;
+    background: var(--color-bg);
+    color:var(--color-text) ;
+    border-radius: 5px;
+    &:focus{
+      border: 1px solid blue;
+    }
+  }
+  span{
+    display: inline-block;
+    margin-left: -30px;
+    cursor: pointer;
+    width: auto;
+  }
+}
+.customSelect{
+  .css-1k0fqge-control{
+    box-shadow: 0px 0px 18px 8px rgba(34, 60, 80, 0.2);
+    border: none;
+    &:focus{
+      border: none;
+    }
+  }
+  .css-1k0fqge-control,.css-hjlzgx-control{
+    background: var(--color-bg);
+    outline: none;
+    color:var(--color-text);
+  }
+  .css-1nmdiq5-menu{
+    background: var(--color-bg);
+  }
+
+  *[class]{
+    color:var(--color-text);
+  }
+
+}
+.section-inputs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.details{
+  margin-bottom: 50px;
+  @media(max-width: 789px) {
+    &__container{
+      flex-direction: column;
+    }
+    &__infoBlock{
+      flex-direction: row;
+    }
+  }
+  &__container{
+    display: flex;
+    align-items: center;
+      gap: 40px;
+    }
+  &__flag{
+    flex:0 0 65%;
+    img{
+      width: 100%;
+    }
+  }
+  &__infoBlock{
+    flex:0 0 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__infoBlock-main, &__infoBlock-other{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    *[class]{
+      font-size: 18px;
+    }
+  }
+
+  &__goBack{
+    background: var(--color-bg);
+    color: var(--color-text);
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    gap: 10px;
+  }
+
+  &__infoBlock-main &__name{
+    font-size: 30px;
+  }
+
+  &__languages, &__borders{
+    display: flex;
+    gap: 10px;
+  }
+  &__borders{
+    display: flex;
+    align-items: center;
+    max-width: 350px;
+    flex-wrap: wrap;
+
+    b{
+      flex:0 0 100%;
+      font-size: 18px;
+    }
+    span{
+      display: inline-block;
+      cursor: pointer;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background: var(--color-bg);
+      box-shadow: var(--shadow);
+      color:var(--color-text) ;
+    }
+  }
+}
