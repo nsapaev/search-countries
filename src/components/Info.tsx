@@ -49,7 +49,7 @@ export default function Info(props) {
                     </div>
                     <div className={"details__borders"}>
                         <b>borders</b>
-                        {neighbords?.map((c, index) => <span onClick={() => {
+                        {neighbords?.map((c:any) => <span onClick={() => {
                         navigate(`/country/${c.toLowerCase()}`)
                     }
 

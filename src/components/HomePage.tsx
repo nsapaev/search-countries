@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import {Cart} from "../App.tsx";
 import {ALL_COUNTRIES} from "../del/api.ts";
 import Controls from "./Controls.tsx";

@@ -1,7 +1,7 @@
 
 import {useNavigate, useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
-import {filterByCode, searcbyCountryName} from "../del/api.ts";
+import {searcbyCountryName} from "../del/api.ts";
 import { IoArrowBack } from "react-icons/io5";
 import Info from "./Info.tsx";
 

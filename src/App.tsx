@@ -1,7 +1,7 @@
 import './App.scss'
 import {FaRegMoon, FaMoon, FaSearch} from "react-icons/fa";
-import React, {useEffect, useState} from "react";
-import Select, {StylesConfig} from 'react-select'
+import {useEffect, useState} from "react";
+import Select from 'react-select'
 import {ALL_COUNTRIES} from "./del/api.ts";
 import HomePage from "./components/HomePage.tsx";
 import {Routes, Route, useNavigate, Link} from "react-router-dom"
@@ -61,7 +61,7 @@ export function Header() {
     )
 }
 
-export function Main({state, setState,filteredCountries }) {
+export function Main({state, setState,filteredCountries}) {
     const navigate = useNavigate()
 
     if (!state.length) {
